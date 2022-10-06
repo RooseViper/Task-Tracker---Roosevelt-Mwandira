@@ -24,7 +24,7 @@ public class Notification : MonoBehaviour
     private void Start()
     {
         taskController = GetComponent<TaskController>();
-
+        this = this;
         var channel = new AndroidNotificationChannel()
         {
             Id = "channel_id",
